@@ -17,7 +17,7 @@ class MusicLibraryController
 
   def list_artists
     @new_music_library.library
-    artists = @new_music_library.library.collect { |song| song.artist.name  }
+    artists = @new_music_library.library.collect { |song| song.artist.name }
     puts artists
   end
 
