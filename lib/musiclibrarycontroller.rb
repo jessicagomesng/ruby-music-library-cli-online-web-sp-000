@@ -22,6 +22,10 @@ class MusicLibraryController
   end
 
   def list_genres 
+    genres = Artist.all.collect { |artist| artist.name }
+    artists.sort!
+    artists.uniq.each_with_index { |artist, index| puts "#{index + 1}. #{artist}" }
+    
 
   def call
     puts "Welcome to your music library!"
