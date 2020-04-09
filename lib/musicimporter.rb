@@ -12,6 +12,10 @@ class MusicImporter
     end
   end
 
+  def library
+    @library 
+  end 
+
   def import
     library = files.collect do |file|
       Song.create_from_filename(file)
