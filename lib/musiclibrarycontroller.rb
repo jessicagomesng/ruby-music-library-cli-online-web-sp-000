@@ -16,7 +16,7 @@ class MusicLibraryController
   end
 
   def list_artists
-    Artist.all.collect { |artist| artist.name }
+    artists = Artist.all.collect { |artist| artist.name }
   end
 
   def call
