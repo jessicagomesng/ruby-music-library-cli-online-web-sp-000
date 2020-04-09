@@ -18,12 +18,7 @@ class MusicLibraryController
   def list_artists
     puts @new_music_library.library
     artists = @new_music_library.collect { |song| song.artist }
-    list_of_files = @new_music_library.files.collect { |file| file.split(" - ") }
-    list_of_artists = list_of_files.collect { |array| array[0] }
-    list_of_artists.sort!
-    list_of_artists.uniq.each_with_index do |artist, index|
-      puts "#{index + 1}. #{artist}"
-    end
+
   end
 
   def call
