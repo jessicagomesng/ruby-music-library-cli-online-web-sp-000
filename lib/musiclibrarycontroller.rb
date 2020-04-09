@@ -16,6 +16,7 @@ class MusicLibraryController
   end
 
   def list_artists
+    @new_music_library.library
     list_of_files = @new_music_library.files.collect { |file| file.split(" - ") }
     list_of_artists = list_of_files.collect { |array| array[0] }
     list_of_artists.sort!
