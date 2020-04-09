@@ -16,7 +16,7 @@ class MusicLibraryController
   end
 
   def list_artists
-    Artist.all
+    puts Artist.all
   end
 
   def call
