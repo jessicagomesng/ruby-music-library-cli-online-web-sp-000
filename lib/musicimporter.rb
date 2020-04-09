@@ -13,7 +13,7 @@ class MusicImporter
   end
 
   def library
-    @library 
+    @library
   end 
 
   def import
