@@ -17,7 +17,8 @@ class MusicLibraryController
 
   def list_artists
     @new_music_library.library
-    artists = @new_music_library.library.collect { |song| song.artist.name }.sort! 
+    artists = @new_music_library.library.collect { |song| song.artist.name }.sort!
+    puts artists
   end
 
   def call
