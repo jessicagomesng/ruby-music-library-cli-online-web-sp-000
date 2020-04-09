@@ -22,9 +22,9 @@ class MusicLibraryController
   end
 
   def list_genres
-    genres = Genre.all.collect { |artist| artist.name }
+    genres = Genre.all.collect { |genre| genre.name }
     genres.sort!
-    artists.uniq.each_with_index { |artist, index| puts "#{index + 1}. #{artist}" }
+    genres.uniq.each_with_index { |artist, index| puts "#{index + 1}. #{artist}" }
 
 
   def call
