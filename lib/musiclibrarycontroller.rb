@@ -16,11 +16,7 @@ class MusicLibraryController
   end
 
   def list_artists
-    @new_music_library.library
-    artists = @new_music_library.library.collect { |song| song.artist.name }.sort!
-    artists.uniq.each_with_index do |artist, index|
-      puts "#{index + 1}. #{artist}"
-    end 
+    Artist.all
   end
 
   def call
