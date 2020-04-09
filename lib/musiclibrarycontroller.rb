@@ -16,7 +16,7 @@ class MusicLibraryController
   end
 
   def list_artists
-    @new_music_library.library
+    puts @new_music_library.library
   end
 
   def call
